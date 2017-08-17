@@ -34,13 +34,13 @@ public class SimpleAddition extends Fragment {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String myNum1=num1.getText().toString();
-                int mNum1=Integer.parseInt(myNum1);
-                String myNum2=num2.getText().toString();
-                int mNum2=Integer.parseInt(myNum2);
+                String myNum1=num1.getText().toString();//Getting string for num1
+                int mNum1=Integer.parseInt(myNum1);//converting into integer
+                String myNum2=num2.getText().toString();//getting string for num2
+                int mNum2=Integer.parseInt(myNum2);//converting into integer
                 //adding to no
                 res=mNum1+mNum2;
-                txt.setText(Integer.toString(res));
+                txt.setText(Integer.toString(res));//setting the text
             }
         });
         return view;
