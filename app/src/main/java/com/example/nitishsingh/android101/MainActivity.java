@@ -13,8 +13,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_add);
-
+        setContentView(R.layout.fragment_add);//here we are setting the fragment layout
+        
+        
+       //here we are getting fragment
         getFragmentManager().findFragmentById(R.id.fragment);
 
 
